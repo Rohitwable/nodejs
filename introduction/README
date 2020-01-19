@@ -59,3 +59,28 @@ long time taking code runs sometime in feature
 SYNC / ASYNC OPERATIONS
 e.g. witeFileSync - blocks the code execution until the current operation done
 writeFile - it does not blocks the current code execution
+
+SINGLE THREAD EVENT LOOP & BLOCKING CODE 
+thread is just like process in os
+node is not able to assing new thread to each request instead it works on single thread
+working with files takes a longer time
+
+EVENT LOOP- 
+is automatically started by node js, when program starts
+is responsible for handling event callbacks
+long time taking operations not handled by event loop just callbacks are handled by EVENT LOOP
+callbacks handled by EVENT LOOP that contain fast executing callbacks 
+first it checks for timers e.g. execute setTimeout(), setInterval() methods.
+second it checks for other callbacks e.g. execute i/o related operations
+third is POLL retrive new i/o events handle their callbacks
+then it execute all close event callbacks
+
+process.exit();
+if no more event handlers 
+
+WORKER POOL
+Long time taking operations are send to WORKER POOL which is managed by nodejs automatically
+heavy lifting is done by WORKER POOL
+it runs on different / multiple threads
+once it done the heavy lifting operations it triggers a callback for that operation
+and then it send back to EVENT LOOP for handling the callbacks
