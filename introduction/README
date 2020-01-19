@@ -84,3 +84,11 @@ heavy lifting is done by WORKER POOL
 it runs on different / multiple threads
 once it done the heavy lifting operations it triggers a callback for that operation
 and then it send back to EVENT LOOP for handling the callbacks
+
+dev dependencies - packages that helps in development
+production dependencies - packages used in code to work with
+
+ERROR TYPES
+1. syntax-
+2. runtime-
+3. logical-
