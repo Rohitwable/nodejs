@@ -45,3 +45,14 @@ const requestHandler = (req, res) => {
 
 //export the module
 module.exports = requestHandler;
+
+//way 2 multilple export
+// module.exports = {
+//     handler: requestHandler,
+//     someText: 'Text'
+// }
+//import like object
+//e.g routes.handler nd routes.someText
+
+// way-3 for exporting
+// module.exports.handler = requestHandler;
