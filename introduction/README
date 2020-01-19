@@ -92,3 +92,11 @@ ERROR TYPES
 1. syntax-
 2. runtime-
 3. logical-
+
+EXPRESS
+writing all the code in node is pretty complex for handling incoming requests
+it has in build form handling and parsing the data
+for all the heavy lifting we use the framework
+framework is set of helper functions that helps to build application
+if we want to focus on business logic and not on spreading the application
+alternatives : koa, vanilla nodejs, adonis.js, sails.js
