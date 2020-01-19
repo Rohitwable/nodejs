@@ -36,3 +36,16 @@ fs: work with file system
 path: work with local file system path relative / absolute path
 os: work with os related information
 
+
+STREAMS & BUFFERS
+stream is ongoing process. req in node in nodejs is read by node as chunks (in parts)
+we  can wrk with individual chunks without waiting for all the chunks to be loaded
+for file upload it takes long time t load the data
+
+BUFFER - is like a bus stops
+we can read the bus stops 
+buffer is global object of node js
+
+LISTENING EVENTS -
+ on allow to listen to the EVENTS
+ eg. data even
