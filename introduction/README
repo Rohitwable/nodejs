@@ -100,3 +100,14 @@ for all the heavy lifting we use the framework
 framework is set of helper functions that helps to build application
 if we want to focus on business logic and not on spreading the application
 alternatives : koa, vanilla nodejs, adonis.js, sails.js
+
+EXPRESS MIDDLEWARE
+express is all about middlewares
+incoming request is automatically funneled (goes) through the bunch of functions by express js
+we use next() to go to the next middlewares
+use()- allow us to add new middlewares
+the middleware will be executed for every incoming request
+use() function takes 3 arguments 
+1. req- req object
+2. res - response object
+3. next() - to travel to the next middleware

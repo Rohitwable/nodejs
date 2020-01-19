@@ -1,10 +1,18 @@
-//import core node modules
+// import core modules
+const express = require('express');
 const http = require('http');
 
-//import local modules
-const routes = require('./routes');
-// create server
-const server = http.createServer(routes);
+const app = express();
 
-//listen to the port
+//middlewares
+app.use((req, res, next) => {
+    console.log("In the first middleware");
+    next();  // allow middleware to travel on next middleware
+})
+
+app.use((req, res, next) => {
+    console.log("In the second middleware");
+})
+
+const server = http.createServer(app);
 server.listen(3002);
