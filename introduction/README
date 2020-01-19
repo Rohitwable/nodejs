@@ -49,3 +49,13 @@ buffer is global object of node js
 LISTENING EVENTS -
  on allow to listen to the EVENTS
  eg. data even
+
+HOW NODEJS WORKS BEHIND SCENE WITH EVENTS
+nodejs has internal event registry where all events registered
+it never pause the code execution 
+functions are just registered internally to it's registry and make available later
+long time taking code runs sometime in feature 
+
+SYNC / ASYNC OPERATIONS
+e.g. witeFileSync - blocks the code execution until the current operation done
+writeFile - it does not blocks the current code execution
