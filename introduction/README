@@ -1,0 +1,38 @@
+Javascript runtime- runs at the server side
+Javascript - runs at hte browser side to manipulate the dom
+Build on Javascript, add features to it.
+Javascript not capable of doing things that Nodejs can do.
+Javascript code run on the server.
+Nodejs uses v8
+V8- is Javascript engine build by google that runs Javascript in the browser/ written in c++
+v8 engine takes Javascript code and compiles to machine code
+working with file systems - open file / read/ write file
+
+REPL - execute javascript code
+
+material icon theme
+
+node first-app.js 
+
+fs-code module of node js to work with the file system
+
+client (browser ) send request (http) to the server. server sends response to request
+node js returns data that client can work with
+we can execute any javascript codewith node js
+node js can be used for local utility scripts / build tools e.g for angular/ react / vue used for many build processes
+Utility scripts like writing to the files/ read from the files
+create server listen to the incoming requests
+we can create server on the node js.
+handle requests / validate input / connect to the database
+return response e.g. json / html / 
+alternatives to node js python / php / asp.net / ruby on rails
+
+REPL - 
+
+core modules
+http : work with http request response / creating server
+https: secured http
+fs: work with file system
+path: work with local file system path relative / absolute path
+os: work with os related information
+
